@@ -1,0 +1,704 @@
+/*----------------------------------------------RESET----------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(223, 189, 0);
+}
+
+/* PRODUCT´S CARD */
+
+.product-card {
+    box-shadow: 0 0 2px #000000;
+    margin: 30px 15px;
+    border-radius: 40px;
+    position: relative;
+    transition-duration: 1s;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px #000000;
+    border-radius: 0;
+}
+
+.product-card:hover .product-card--img {
+    border-radius: 0;
+}
+
+.product-card:hover .product-card--description {
+    transform: translateY(0);
+    height: 173px;
+    opacity: 1;
+}
+
+.product-card:hover .product-card--description__button {
+    border-radius: 0;
+}
+
+.product-card--img {
+    height: 300px;
+    width: 300px;
+    transition-duration: 1s;
+    position: relative;
+    z-index: 9998;
+    border-radius: 40px;
+
+    /*Product´s background*/
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+}
+
+.product-card--img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-card--description {
+    width: 300px;
+    height: 0;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+    transform: translateY(-145px);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+.product-card--description h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    padding: 10px 0 0 20px;
+}
+
+.product-card--description p {
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 0px 20px 20px 0px;
+}
+
+.product-card--description__button {
+    align-self: flex-end;
+    background-color: rgb(223, 189, 0);
+    color: #000;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition-duration: 1s;
+}
+
+.product-card--description__button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* HORIZONTAL PRODUCT´S CARD */
+
+.horizontal-container {
+    display: grid;
+    grid-template-areas: "horizontal-container--img horizontal-container--description";
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    height: 300px;
+    margin: 0 15px 50px 15px;
+    justify-items: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.horizontal-container:hover {
+    box-shadow: 0 0 20px #fff;
+}
+
+.horizontal-container--img {
+    grid-area: horizontal-container--img;
+    width: 350px;
+    height: 300px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.horizontal-container--img img {
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-container--description {
+    grid-area: horizontal-container--description;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    padding: 0 1px;
+}
+
+.horizontal-container--description h4 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    color: rgb(220, 187, 0);
+    padding-top: 15px;
+}
+
+.horizontal-container--description ul {
+    list-style-type: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.horizontal-container--description li {
+    padding: 4px 0;
+}
+
+.horizontal-container--description a {
+    background-color: rgb(223, 189, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    padding: 1px 30px;
+    box-shadow: 0 0 9px #000;
+    border-radius: 50px;
+    transition-duration: 1s;
+    color: #000;
+}
+
+.horizontal-container--description a:hover {
+    background-color: #fff;
+}
+
+/*----------------------------------------------BODY----------------------------------------------*/
+
+body {
+    background-image: url("/public/images/patterns/pattern.png");
+}
+
+/*----------------------------------------------IDs----------------------------------------------*/
+
+#logo {
+    width: 300px;
+    padding: 10px;
+    filter: drop-shadow(0 0 15px rgba(255, 166, 0, 0.808));
+}
+
+/*----------------------------------------------PAGE´S HEADER STYLE----------------------------------------------*/
+.header {
+    list-style-type: none;
+    background-color: rgb(223, 189, 0);
+    box-shadow: 0 0 9px #000000;
+    display: grid;
+    justify-items: flex-end;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 0fr) 1fr 0fr;
+}
+
+.header__item {
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    padding: 14px 50px;
+    transition-duration: 1s;
+}
+
+.header__item:hover {
+    background-color: black;
+}
+
+.header__item a {
+    color: black;
+}
+
+.header__item:hover a {
+    color: white;
+}
+
+.header__item:hover .header__item--subitem a {
+    color: #000;
+}
+
+.header__item:hover .header__item--subitem:hover a {
+    color: #ffffff;
+}
+
+/*SUBMENU*/
+.header__item ul {
+    position: absolute;
+    display: none;
+    margin-top: 1.9rem;
+    left: 0;
+    z-index: 9999;
+}
+
+.header__item:hover ul {
+    display: block;
+}
+
+.header__item--subitem {
+    list-style: none;
+    background-color: rgb(223, 189, 0);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    padding: 14px 50px;
+    width: 100%;
+    transition-duration: 1s;
+    box-shadow: 0 0 1px #000000;
+}
+
+.header__item--subitem:hover {
+    background-color: black;
+}
+
+/*USER AND CART ICONS*/
+.header__item--icon {
+    align-self: center;
+}
+
+.header__item--icon a {
+    margin: 14px 40px 0px 0px;
+    transition-duration: 1s;
+}
+
+.header__item--icon a img {
+    width: 37px;
+    transition-duration: 1s;
+}
+
+.header__item--icon a img:hover {
+    border-radius: 35%;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+/*----------------------------------------------PAGE´S PRESENTATION STYLE----------------------------------------------*/
+
+.hero {
+    box-shadow: inset 0 0 10px #000000;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.686), rgba(255, 255, 255, 0.347)), url("/public/images/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    /* margin: 20px 5px 30px 5px; */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*----------------------------------------------FEATURED PRODUCTS SECTION STYLE----------------------------------------------*/
+
+.featured-products-section h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.featured-products-section h3 span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    padding: 15px;
+    letter-spacing: 0.5rem;
+    box-shadow: inset 0 0 10px #000000;
+    border-radius: 10px;
+}
+
+.featured-products-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    position: relative;
+}
+
+/*----------------------------------------------CATEGORY SECTION STYLE----------------------------------------------*/
+
+.category-section {
+    background-image: url("/public/images/patterns/d-pattern.png");
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
+.category-section h3 {
+    text-align: center;
+}
+
+.category-section h3 span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    padding: 15px;
+    color: white;
+    letter-spacing: 0.5rem;
+    box-shadow: inset 0 0 10px #ffffff;
+    border-radius: 10px;
+}
+
+.category-section__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.category-section__list div {
+    width: 450px;
+    margin: 40px;
+}
+
+.category-section__list div a img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px white;
+    transition-duration: 1.5s;
+    filter: grayscale(1);
+}
+
+.category-section__list div h2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.category-section__list div a img:hover {
+    box-shadow: 0 0 40px gold;
+    filter: none;
+}
+
+/*----------------------------------------------SOCIAL MEDIA DIV----------------------------------------------*/
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    box-shadow: inset 0 0 10px #000000;
+    background-color: #0000003f;
+    margin: 20px 5px 0px 5px;
+}
+
+.social-media a {
+    margin: 50px;
+}
+
+.social-media a img {
+    width: 130px;
+    filter: drop-shadow(0 0 15px rgb(0, 0, 0));
+}
+
+/*----------------------------------------------FOOTER STYLE----------------------------------------------*/
+
+.footer {
+    background-color: rgb(223, 189, 0);
+    box-shadow: 0 0 9px #000000;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------PRODUCTS WINDOW----------------------------------------------*/
+
+.p-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px 0;
+    grid-template-areas:
+        "new-releases-section offers-section"
+        "products-section products-section";
+}
+
+.new-releases-section {
+    grid-area: new-releases-section;
+    padding-top: 20px;
+    background-image: url("/public/images/patterns/d-pattern.png");
+}
+
+.new-releases-section__title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.new-releases-section__title span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    padding: 5px;
+    letter-spacing: 1rem;
+    box-shadow: 0 0 9px #fff;
+    color: #fff;
+}
+
+.new-releases-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    padding-top: 40px;
+    border-radius: 30px;
+}
+
+.offers-section {
+    grid-area: offers-section;
+    padding-top: 20px;
+    background-image: url("/public/images/patterns/d-pattern.png");
+}
+
+.offers-section__title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.offers-section__title span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    padding: 5px;
+    letter-spacing: 1rem;
+    box-shadow: 0 0 9px #fff;
+    color: #fff;
+}
+
+.offers-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    padding-top: 40px;
+    border-radius: 30px;
+}
+
+.products-section {
+    grid-area: products-section;
+}
+
+.products-section h2 {
+    box-shadow: 0 0 9px #000000;
+    background-color: rgb(223, 189, 0);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.products-section h2 span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}
+
+.products-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 30px 0;
+}
+
+.products-section h3 span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------CONTACT'S WINDOW----------------------------------------------*/
+
+.contact-form-style {
+    box-shadow: inset 0 0 10px #000000;
+    background-color: #0000003f;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.535), rgba(0, 0, 0, 0.686)), url("/public/images/fondo_contacto.png");
+    background-size: cover;
+    margin: 20px 5px 0px 5px;
+    padding: 25px;
+}
+
+.contact-form-style fieldset {
+    border: none;
+}
+
+.contact-form-style input[type=text],
+input[type=email],
+select {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 30%;
+    padding: 20px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 4px #000000;
+}
+
+.contact-form-style textarea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 4px #000000;
+    resize: none;
+}
+
+.contact-form-style input[type=submit] {
+    width: 20%;
+    background-color: rgb(223, 189, 0);
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 27px;
+    padding: 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+.contact-form-style input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgb(223, 189, 0);
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------PRODUCT´S WINDOW----------------------------------------------*/
+
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "product__img product__description";
+    justify-items: center;
+    align-items: center;
+    margin: 30px 5px 0 5px;
+}
+
+.product__img {
+    grid-area: product__img;
+    width: 450px;
+    height: 450px;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+}
+
+.product__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product__description {
+    grid-area: product__description;
+    width: 100%;
+    height: 100%;
+}
+
+.product__description h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    color: rgb(220, 187, 0);
+    padding-top: 15px;
+    text-align: center;
+}
+
+.product__description ul {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.product__description li {
+    padding: 15px 0;
+}
+
+.product__description h3 {
+    display: inline;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.product__description--button {
+    background-color: rgb(223, 189, 0);
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    padding: 1px 30px;
+    border-radius: 80px;
+    box-shadow: 0 0 10px #000;
+    border: none;
+    transition-duration: 1s;
+}
+
+.product__description--button:hover {
+    background-color: #fff;
+}

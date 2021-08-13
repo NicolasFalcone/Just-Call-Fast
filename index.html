@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Call Fast</title>
+    <link rel="icon" href="public/images/icons/JustCallFastLogo.svg" type="image/icon type">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/stylesheets/styles.css">
+</head>
+
+<body>
+    <!--Page´s Header Navigation Bar-->
+    <ul class="header">
+        <li class="header__item">
+            <a href="index.html">Home</a>
+        </li>
+
+        <li class="header__item">
+            <a href="views/productos.html">Productos</a>
+
+            <ul>
+                <li class="header__item--subitem">
+                    <a href="views/productos.html#offersAndReleases">Últimos Lanzamientos y Ofertas</a>
+                </li>
+
+                <li class="header__item--subitem">
+                    <a href="#categories">Categorías</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="header__item">
+            <a href="views/nosotros.html">Nosotros</a>
+        </li>
+
+        <li class="header__item">
+            <a href="views/contactenos.html">Contáctenos</a>
+        </li>
+
+        <li class="header__item--icon">
+            <a href="views/perfil.html">
+                <img src="public/images/icons/user.svg" alt="User Icon" />
+            </a>
+        </li>
+
+        <li class="header__item--icon">
+            <a href="views/carrito.html">
+                <img src="public/images/icons/cart.svg" alt="Cart Icon" />
+            </a>
+        </li>
+    </ul>
+
+    <!--Section 1 - Page´s Presentation-->
+    <div class="hero">
+        <img src="public/images/logo.png" id="logo" alt="Logo" />
+    </div>
+
+    <!--Section 2 - Featured Products-->
+    <section class="featured-products-section">
+        <h3>
+            <span>DESTACADOS</span>
+        </h3>
+
+        <div class="featured-products-section__list">
+            <div class="product-card">
+                <div class="product-card--img">
+                    <a href="views/producto.html">
+                        <img src="public/images/termos.png" alt="Producto Destacado 1" />
+                    </a>
+                </div>
+
+                <div class="product-card--description">
+                    <h4>$223</h4>
+                    <p>Pava Eléctrica</p>
+
+                    <button class="product-card--description__button">
+                        Agregar al Carrito
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="product-card">
+                <div class="product-card--img">
+                    <a href="views/producto.html">
+                        <img src="public/images/auxiliar.png" alt="Producto Destacado 2" />
+                    </a>
+                </div>
+
+                <div class="product-card--description">
+                    <h4>$223</h4>
+                    <p>Cable Auxiliar</p>
+
+                    <button class="product-card--description__button">
+                        Agregar al Carrito
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="product-card">
+                <div class="product-card--img">
+                    <a href="views/producto.html">
+                        <img src="public/images/balanza_digital2.png" alt="Producto Destacado 3" />
+                    </a>
+                </div>
+
+                <div class="product-card--description">
+                    <h4>$223</h4>
+                    <p>Balanza de Cocina</p>
+
+                    <button class="product-card--description__button">
+                        Agregar al Carrito
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="product-card">
+                <div class="product-card--img">
+                    <a href="views/producto.html">
+                        <img src="public/images/inpods.png" alt="Producto Destacado 4" />
+                    </a>
+                </div>
+
+                <div class="product-card--description">
+                    <h4>$223</h4>
+                    <p>Auriculares Inpods I12</p>
+
+                    <button class="product-card--description__button">
+                        Agregar al Carrito
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Section 3 - Categories-->
+    <section class="category-section" id="categories">
+        <!-- <h3>
+            <span>CATEGORÍAS</span>
+        </h3> -->
+
+        <div class="category-section__list">
+            <div>
+                <a href="views/productos.html#accesoriosTV">
+                    <img src="public/images/categories/television.jpg" alt="Categoria 1" />
+                </a>
+
+                <h2>ACCESORIOS PARA TV</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#almacenamiento">
+                    <img src="public/images/categories/almacenamiento.jpg" alt="Categoria 2" />
+                </a>
+
+                <h2>ALMACENAMIENTO</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#audio">
+                    <img src="public/images/categories/audio.jpg" alt="Categoria 3" />
+                </a>
+
+                <h2>AUDIO</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#cargadores">
+                    <img src="public/images/categories/cargadores.jpg" alt="Categoria 4" />
+                </a>
+
+                <h2>CARGADORES</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#gadgets">
+                    <img src="public/images/categories/accesorios.jpg" alt="Categoria 5" />
+                </a>
+
+                <h2>GADGETS</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#hogar">
+                    <img src="public/images/categories/hogaryelectro.jpg" alt="Categoria 6" />
+                </a>
+
+                <h2>HOGAR Y ELECTRODOMÉSTICOS</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#informatica">
+                    <img src="public/images/categories/informaticaygaming.jpg" alt="Categoria 7" />
+                </a>
+
+                <h2>INFORMÁTICA Y GAMING</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#iluminacion">
+                    <img src="public/images/categories/iluminacion.jpg" alt="Categoria 8" />
+                </a>
+
+                <h2>ILUMINACIÓN</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#pilas">
+                    <img src="public/images/categories/pilayaccesorios.jpg" alt="Categoria 9" />
+                </a>
+
+                <h2>PILAS</h2>
+            </div>
+
+            <div>
+                <a href="views/productos.html#soportes">
+                    <img src="public/images/categories/soporteauto.jpg" alt="Categoria 10" />
+                </a>
+
+                <h2>SOPORTES PARA AUTO</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Social Media Accounts-->
+    <div class="social-media">
+        <a href="https://www.facebook.com/Just-Call-Fast-106379838279721" target="_blank">
+            <img src="public/images/icons/facebook.svg" alt="Facebook Icon" />
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=542235182817" target="_blank">
+            <img src="public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
+        </a>
+
+        <a href="https://instagram.com/justcallfast?igshid=144hfg73922sy" target="_blank">
+            <img src="public/images/icons/instagram-icon.svg" alt="Instagram Icon" />
+        </a>
+    </div>
+
+    <!--Page´s Footer-->
+    <footer class="footer">
+        Copyright © 2021 | Just Call Fast. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
