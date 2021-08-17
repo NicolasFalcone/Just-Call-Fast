@@ -218,7 +218,6 @@ body {
     box-shadow: 0 0 9px #000000;
     display: grid;
     justify-items: flex-end;
-    justify-content: space-evenly;
     grid-template-columns: repeat(4, 0fr) 1fr 0fr;
 }
 
