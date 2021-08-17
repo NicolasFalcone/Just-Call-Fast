@@ -631,13 +631,14 @@ select {
         "product__img product__description";
     justify-items: center;
     align-items: center;
-    margin: 30px 5px 0 5px;
+    margin-top: 30px;
 }
 
 .product__img {
     grid-area: product__img;
     width: 450px;
     height: 450px;
+    margin-right: 30px;
 
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
     box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
@@ -652,24 +653,28 @@ select {
 
 .product__description {
     grid-area: product__description;
-    width: 100%;
+    width: 60%;
     height: 100%;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 8px #000;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .product__description h2 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 8rem;
+    font-size: 6rem;
     letter-spacing: 0.4rem;
     font-weight: bold;
-    color: rgb(220, 187, 0);
     padding-top: 15px;
-    text-align: center;
 }
 
 .product__description ul {
     font-family: 'Oswald', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 16px;
+    text-align: start;
+    margin-left: 20%;
 }
 
 .product__description li {
@@ -679,19 +684,19 @@ select {
 .product__description h3 {
     display: inline;
     font-family: 'Bebas Neue', cursive;
-    font-size: 8rem;
+    font-size: 7rem;
     letter-spacing: 0.4rem;
     font-weight: bold;
     padding-top: 15px;
-    text-align: center;
 }
 
 .product__description--button {
     background-color: rgb(223, 189, 0);
     font-family: 'Oswald', sans-serif;
-    font-size: 5rem;
-    padding: 1px 30px;
-    border-radius: 80px;
+    font-size: 4rem;
+    padding: 8px;
+    margin: 0 0 30px 40px;
+    border-radius: 40px;
     box-shadow: 0 0 10px #000;
     border: none;
     transition-duration: 1s;
