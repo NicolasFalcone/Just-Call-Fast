@@ -1,3 +1,56 @@
+/*----------------------------------------------BOOTSTRAP----------------------------------------------*/
+
+.navbar-brand {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+.navbar-nav a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    padding: 8px 50px;
+}
+
+.nav-item {
+    padding: 0 30px;
+}
+
+.nav-item img {
+    width: 100px;
+}
+
+/* .icon {
+    width: 30px;
+} */
+
+.card-body .btn {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.sn-icon {
+    width: 3rem;
+}
+
+.footer-text-sm {
+    font-size: 1rem;
+}
+
+.footer-text-md {
+    font-size: 2rem;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
 /*----------------------------------------------RESET----------------------------------------------*/
 
 * {
@@ -12,6 +65,10 @@ html {
 
 a {
     text-decoration: none;
+}
+
+header {
+    box-shadow: 0 0 9px #000000;
 }
 
 ::-webkit-scrollbar {
@@ -61,7 +118,6 @@ a {
     width: 300px;
     transition-duration: 1s;
     position: relative;
-    z-index: 9998;
     border-radius: 40px;
 
     /*Product´s background*/
@@ -199,8 +255,9 @@ a {
 
 /*----------------------------------------------BODY----------------------------------------------*/
 
-body {
+.vh-100 {
     background-image: url("/public/images/patterns/pattern.png");
+    min-width: 300px;
 }
 
 /*----------------------------------------------IDs----------------------------------------------*/
@@ -212,13 +269,12 @@ body {
 }
 
 /*----------------------------------------------PAGE´S HEADER STYLE----------------------------------------------*/
+
+/* 
 .header {
     list-style-type: none;
     background-color: rgb(223, 189, 0);
     box-shadow: 0 0 9px #000000;
-    display: grid;
-    justify-items: flex-end;
-    grid-template-columns: repeat(4, 0fr) 1fr 0fr;
 }
 
 .header__item {
@@ -228,6 +284,7 @@ body {
     letter-spacing: 0.5rem;
     padding: 14px 50px;
     transition-duration: 1s;
+    color: #000;
 }
 
 .header__item:hover {
@@ -250,7 +307,7 @@ body {
     color: #ffffff;
 }
 
-/*SUBMENU*/
+/*SUBMENU
 .header__item ul {
     position: absolute;
     display: none;
@@ -279,7 +336,7 @@ body {
     background-color: black;
 }
 
-/*USER AND CART ICONS*/
+/*USER AND CART ICONS
 .header__item--icon {
     align-self: center;
 }
@@ -299,6 +356,7 @@ body {
     box-shadow: 0px 0px 10px #000000;
 }
 
+*/
 /*----------------------------------------------PAGE´S PRESENTATION STYLE----------------------------------------------*/
 
 .hero {
@@ -306,8 +364,7 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.686), rgba(255, 255, 255, 0.347)), url("/public/images/fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 15px;
-    margin-bottom: 30px;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -339,8 +396,9 @@ body {
 
 .category-section {
     background-image: url("/public/images/patterns/d-pattern.png");
-    padding-top: 40px;
-    margin-top: 10px;
+    padding: 10px 0 40px 0;
+    margin-top: 50px;
+    color: #fff;
 }
 
 .category-section h3 {

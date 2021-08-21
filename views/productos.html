@@ -6,76 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - Just Call Fast</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
     <link rel="icon" href="/public/images/icons/JustCallFastLogo.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/public/stylesheets/styles.css">
 </head>
 
 <body>
     <!--Page´s Header Navigation Bar-->
-    <ul class="header">
-        <li class="header__item">
-            <a href="/index.html">Home</a>
-        </li>
+    <header>
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark d-lg-none" href="#">Just Call Fast</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <li class="header__item">
-            <a href="productos.html">Productos</a>
+                <div class="navbar-collapse collapse" id="navbarsExample05">
+                    <ul class="navbar-nav text-center align-items-center mb-2 mb-lg-0">
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link text-dark" aria-current="page" href="/index.html">
+                                <img src="/public/images/logo.png" alt="Logo">
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block d-xl-none">
+                            <a class="nav-link text-dark" aria-current="page" href="/index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="productos.html" id="dropdown05"
+                                data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
 
-            <ul>
-                <li class="header__item--subitem">
-                    <a href="#accesoriosTV">ACCESORIOS PARA TV</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#almacenamiento">ALMACENAMIENTO</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#audio">AUDIO</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#cargadores">CARGADORES</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#gadgets">GADGETS</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#hogar">HOGAR Y ELECTRODOMÉSTICOS</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#informatica">INFORMÁTICA Y GAMING</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#iluminacion">ILUMINACIÓN</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#pilas">PILAS</a>
-                </li>
-                <li class="header__item--subitem">
-                    <a href="#soportes">SOPORTES PARA AUTO</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="header__item">
-            <a href="nosotros.html">Nosotros</a>
-        </li>
-
-        <li class="header__item">
-            <a href="contactenos.html">Contáctenos</a>
-        </li>
-
-        <li class="header__item--icon">
-            <a href="perfil.html">
-                <img src="/public/images/icons/user.svg" alt="User Icon" />
-            </a>
-        </li>
-
-        <li class="header__item--icon">
-            <a href="carrito.html">
-                <img src="/public/images/icons/cart.svg" alt="Cart Icon" />
-            </a>
-        </li>
-    </ul>
+                            <ul class="dropdown-menu shadow-lg text-center bg-warning" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item px-3" href="#accesoriosTV">ACCESORIOS PARA TV</a></li>
+                                <li><a class="dropdown-item px-3" href="#almacenamiento">ALMACENAMIENTO</a></li>
+                                <li><a class="dropdown-item px-3" href="#audio">AUDIO</a></li>
+                                <li><a class="dropdown-item px-3" href="#cargadores">CARGADORES</a></li>
+                                <li><a class="dropdown-item px-3" href="#gadgets">GADGETS</a></li>
+                                <li><a class="dropdown-item px-3" href="#hogar">HOGAR Y ELECTRODOMÉSTICOS</a></li>
+                                <li><a class="dropdown-item px-3" href="#informatica">INFORMÁTICA Y GAMING</a></li>
+                                <li><a class="dropdown-item px-3" href="#iluminacion">ILUMINACIÓN</a></li>
+                                <li><a class="dropdown-item px-3" href="#pilas">PILAS</a></li>
+                                <li><a class="dropdown-item px-3" href="#soportes">SOPORTES PARA AUTO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contactenos.html">Contáctenos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-dark d-inline p-5" href="./views/perfil.html">
+                                <img src="public/images/icons/user.svg" class="icon" alt="User Icon" />
+                            </a>
+                            <a class="nav-link text-dark d-inline p-5" href="./views/carrito.html">
+                                <img src="public/images/icons/cart.svg" class="icon" alt="Cart Icon" />
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!--Products-->
     <main class="p-main" id="offersAndReleases">

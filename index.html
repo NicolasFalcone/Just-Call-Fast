@@ -8,250 +8,307 @@
     <title>Just Call Fast</title>
     <link rel="icon" href="public/images/icons/JustCallFastLogo.svg" type="image/icon type">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./public/stylesheets/styles.css">
 </head>
 
-<body>
+<body class="vh-100 m-0 p-0">
     <!--Page´s Header Navigation Bar-->
-    <nav>
-        <ul class="header">
-            <li class="header__item">
-                <a href="index.html">Home</a>
-            </li>
+    <header>
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark d-lg-none" href="#">Just Call Fast</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <li class="header__item">
-                <a href="./views/productos.html">Productos</a>
+                <div class="navbar-collapse collapse" id="navbarsExample05">
+                    <ul class="navbar-nav text-center align-items-center mb-2 mb-lg-0">
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link text-dark" aria-current="page" href="#">
+                                <img src="./public/images/logo.png" alt="Logo">
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block d-xl-none">
+                            <a class="nav-link text-dark" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="dropdown05"
+                                data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
 
-                <ul>
-                    <li class="header__item--subitem">
-                        <a href="./views/productos.html#offersAndReleases">Últimos Lanzamientos y Ofertas</a>
-                    </li>
+                            <ul class="dropdown-menu shadow-lg text-center bg-warning" aria-labelledby="dropdown05">
+                                <li>
+                                    <a class="dropdown-item px-3"
+                                        href="./views/productos.html#offersAndReleases">Últimos
+                                        Lanzamientos y Ofertas</a>
+                                </li>
+                                <li><a class="dropdown-item px-3" href="#categories">Categorías</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./views/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="./views/contactenos.html">Contáctenos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-dark d-inline p-5" href="./views/perfil.html">
+                                <img src="public/images/icons/user.svg" class="icon" alt="User Icon" />
+                            </a>
+                            <a class="nav-link text-dark d-inline p-5" href="./views/carrito.html">
+                                <img src="public/images/icons/cart.svg" class="icon" alt="Cart Icon" />
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                    <li class="header__item--subitem">
-                        <a href="#categories">Categorías</a>
-                    </li>
-                </ul>
-            </li>
+    <main>
+        <!--Section 1 - Page´s Presentation-->
+        <section class="mb-5">
+            <div class="container-fluid d-xl-none ">
+                <div class="row">
+                    <div class="hero d-none d-lg-block">
+                        <img src="./public/images/logo.png" id="logo" alt="Logo" />
+                    </div>
+                </div>
+            </div>
 
-            <li class="header__item">
-                <a href="./views/nosotros.html">Nosotros</a>
-            </li>
+            <div id="carouselExampleCaptions" class="d-none d-xl-block carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="/public/images/fondo.jpg" class="d-block w-100" alt="Imagen 1">
 
-            <li class="header__item">
-                <a href="./views/contactenos.html">Contáctenos</a>
-            </li>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="/public/images/fondo2.jpg" class="d-block w-100" alt="Imagen 2">
 
-            <li class="header__item--icon">
-                <a href="./views/perfil.html">
-                    <img src="public/images/icons/user.svg" alt="User Icon" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="/public/images/fondo3.jpg" class="d-block w-100" alt="Imagen 3">
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--Section 2 - Featured Products-->
+        <section>
+            <h2 class="display-3 text-center mb-5">
+                Productos Destacados
+            </h2>
+            <div class="card-deck d-flex flex-wrap justify-content-evenly gap-3">
+                <div class="card col-5 col-sm-5 col-md-4 col-lg-3">
+                    <img src="public/images/termos.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title border-top pt-3">Pava Eléctrica</h3>
+                        <h4 class="card-subtitle text-end">$223</h4>
+                        <div class="text-center pt-3">
+                            <a href="#" class="btn btn-warning">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-5 col-sm-5 col-md-4 col-lg-3">
+                    <img src="public/images/auxiliar.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title border-top pt-3">Cable Auxiliar</h3>
+                        <h4 class="card-subtitle text-end">$223</h4>
+                        <div class="text-center pt-3">
+                            <a href="#" class="btn btn-warning">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-5 col-sm-5 col-md-4 col-lg-3">
+                    <img src="public/images/balanza_digital2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title border-top pt-3">Balanza de Cocina</h3>
+                        <h4 class="card-subtitle text-end">$223</h4>
+                        <div class="text-center pt-3">
+                            <a href="#" class="btn btn-warning">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-5 col-sm-5 col-md-4 col-lg-3">
+                    <img src="public/images/inpods.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title border-top pt-3">Auriculares Inpods I12</h3>
+                        <h4 class="card-subtitle text-end">$223</h4>
+                        <div class="text-center pt-3">
+                            <a href="#" class="btn btn-warning">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Section 3 - Categories-->
+        <section class="category-section" id="categories">
+            <div class="d-flex justify-content-evenly align-items-center flex-wrap mt-5 w-100 my-md-3 ps-md-3">
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="py-3">
+                        <h2 class="display-4 mb-3">Accesorios Para TV</h2>
+                    </div>
+                    <div class="w-50 mx-auto overflow-hidden rounded-pill">
+                        <a href="views/productos.html#accesoriosTV">
+                            <img src="public/images/categories/television.jpg" class="w-100" />
+                        </A>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Almacenamiento</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#almacenamiento">
+                            <img src="public/images/categories/almacenamiento.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Audio</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#audio">
+                            <img src="public/images/categories/audio.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Cargadores</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#cargadores">
+                            <img src="public/images/categories/cargadores.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Gadgets</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#gadgets">
+                            <img src="public/images/categories/accesorios.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Hogar y Electrodomésticos</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#hogar">
+                            <img src="public/images/categories/hogaryelectro.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Informática y Gaming</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#informatica">
+                            <img src="public/images/categories/informaticaygaming.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Iluminación</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#iluminacion">
+                            <img src="public/images/categories/iluminacion.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Pilas</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#pilas">
+                            <img src="public/images/categories/pilayaccesorios.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+                <div class="me-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="mt-5 py-3">
+                        <h2 class="display-4 mb-3">Soportes Para Auto</h2>
+                    </div>
+                    <div class="mx-auto overflow-hidden rounded-pill w-50">
+                        <a href="views/productos.html#soportes">
+                            <img src="public/images/categories/soporteauto.jpg" class="w-100" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Section 4 - Footer-->
+    <footer class="d-flex justify-content-evenly align-items-center py-3 bg-warning">
+        <div class="col-6 justify-content-center d-flex">
+            <span class="footer-text-sm d-md-none">Copyright © 2021 | Just Call Fast. All rights reserved.</span>
+            <span class="d-none d-md-block footer-text-md">Copyright © 2021 | Just Call Fast. All rights
+                reserved.</span>
+        </div>
+
+        <ul class="nav col-6 justify-content-center list-unstyled d-flex">
+            <li class="ms-5">
+                <a class="text-muted" href="https://www.facebook.com/Just-Call-Fast-106379838279721">
+                    <img class="sn-icon rounded-circle" src="/public/images/icons/facebook.svg" alt="Facebook Icon" />
                 </a>
             </li>
-
-            <li class="header__item--icon">
-                <a href="./views/carrito.html">
-                    <img src="public/images/icons/cart.svg" alt="Cart Icon" />
+            <li class="ms-5">
+                <a class="text-muted" href="https://api.whatsapp.com/send?phone=542235182817">
+                    <img class="sn-icon" src="/public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
+                </a>
+            </li>
+            <li class="ms-5">
+                <a class="text-muted" href="https://instagram.com/justcallfast?igshid=144hfg73922sy">
+                    <img class="sn-icon rounded-circle" src="/public/images/icons/instagram-icon.svg"
+                        alt="Instagram Icon" />
                 </a>
             </li>
         </ul>
-    </nav>
-
-    <!--Section 1 - Page´s Presentation-->
-    <div class="hero">
-        <img src="./public/images/logo.png" id="logo" alt="Logo" />
-    </div>
-
-    <!--Section 2 - Featured Products-->
-    <section class="featured-products-section">
-        <h3>
-            <span>DESTACADOS</span>
-        </h3>
-
-        <div class="featured-products-section__list">
-            <div class="product-card">
-                <div class="product-card--img">
-                    <a href="views/producto.html">
-                        <img src="public/images/termos.png" alt="Producto Destacado 1" />
-                    </a>
-                </div>
-
-                <div class="product-card--description">
-                    <h4>$223</h4>
-                    <p>Pava Eléctrica</p>
-
-                    <button class="product-card--description__button">
-                        Agregar al Carrito
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="product-card">
-                <div class="product-card--img">
-                    <a href="views/producto.html">
-                        <img src="public/images/auxiliar.png" alt="Producto Destacado 2" />
-                    </a>
-                </div>
-
-                <div class="product-card--description">
-                    <h4>$223</h4>
-                    <p>Cable Auxiliar</p>
-
-                    <button class="product-card--description__button">
-                        Agregar al Carrito
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="product-card">
-                <div class="product-card--img">
-                    <a href="views/producto.html">
-                        <img src="public/images/balanza_digital2.png" alt="Producto Destacado 3" />
-                    </a>
-                </div>
-
-                <div class="product-card--description">
-                    <h4>$223</h4>
-                    <p>Balanza de Cocina</p>
-
-                    <button class="product-card--description__button">
-                        Agregar al Carrito
-                    </button>
-                </div>
-
-            </div>
-
-            <div class="product-card">
-                <div class="product-card--img">
-                    <a href="views/producto.html">
-                        <img src="public/images/inpods.png" alt="Producto Destacado 4" />
-                    </a>
-                </div>
-
-                <div class="product-card--description">
-                    <h4>$223</h4>
-                    <p>Auriculares Inpods I12</p>
-
-                    <button class="product-card--description__button">
-                        Agregar al Carrito
-                    </button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--Section 3 - Categories-->
-    <section class="category-section" id="categories">
-        <!-- <h3>
-            <span>CATEGORÍAS</span>
-        </h3> -->
-
-        <div class="category-section__list">
-            <div>
-                <a href="views/productos.html#accesoriosTV">
-                    <img src="public/images/categories/television.jpg" alt="Categoria 1" />
-                </a>
-
-                <h2>ACCESORIOS PARA TV</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#almacenamiento">
-                    <img src="public/images/categories/almacenamiento.jpg" alt="Categoria 2" />
-                </a>
-
-                <h2>ALMACENAMIENTO</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#audio">
-                    <img src="public/images/categories/audio.jpg" alt="Categoria 3" />
-                </a>
-
-                <h2>AUDIO</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#cargadores">
-                    <img src="public/images/categories/cargadores.jpg" alt="Categoria 4" />
-                </a>
-
-                <h2>CARGADORES</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#gadgets">
-                    <img src="public/images/categories/accesorios.jpg" alt="Categoria 5" />
-                </a>
-
-                <h2>GADGETS</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#hogar">
-                    <img src="public/images/categories/hogaryelectro.jpg" alt="Categoria 6" />
-                </a>
-
-                <h2>HOGAR Y ELECTRODOMÉSTICOS</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#informatica">
-                    <img src="public/images/categories/informaticaygaming.jpg" alt="Categoria 7" />
-                </a>
-
-                <h2>INFORMÁTICA Y GAMING</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#iluminacion">
-                    <img src="public/images/categories/iluminacion.jpg" alt="Categoria 8" />
-                </a>
-
-                <h2>ILUMINACIÓN</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#pilas">
-                    <img src="public/images/categories/pilayaccesorios.jpg" alt="Categoria 9" />
-                </a>
-
-                <h2>PILAS</h2>
-            </div>
-
-            <div>
-                <a href="views/productos.html#soportes">
-                    <img src="public/images/categories/soporteauto.jpg" alt="Categoria 10" />
-                </a>
-
-                <h2>SOPORTES PARA AUTO</h2>
-            </div>
-        </div>
-
-    </section>
-
-    <!--Social Media Accounts-->
-    <div class="social-media">
-        <a href="https://www.facebook.com/Just-Call-Fast-106379838279721" target="_blank">
-            <img src="public/images/icons/facebook.svg" alt="Facebook Icon" />
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=542235182817" target="_blank">
-            <img src="public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
-        </a>
-
-        <a href="https://instagram.com/justcallfast?igshid=144hfg73922sy" target="_blank">
-            <img src="public/images/icons/instagram-icon.svg" alt="Instagram Icon" />
-        </a>
-    </div>
-
-    <!--Page´s Footer-->
-    <footer class="footer">
-        Copyright © 2021 | Just Call Fast. All rights reserved.
     </footer>
 
 </body>
