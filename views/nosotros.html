@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="/public/stylesheets/styles.css">
 </head>
 
-<body>
+<body class="vh-100">
     <!--Page´s Header Navigation Bar-->
     <header>
-        <nav class="navbar  navbar-expand-lg navbar-dark bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
-                <a class="navbar-brand text-dark d-lg-none" href="#">Just Call Fast</a>
+                <a class="navbar-brand text-black d-lg-none" href="/index.html">Just Call Fast</a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
@@ -33,63 +33,61 @@
                 <div class="navbar-collapse collapse" id="navbarsExample05">
                     <ul class="navbar-nav text-center align-items-center mb-2 mb-lg-0">
                         <li class="nav-item d-none d-xl-block">
-                            <a class="nav-link text-dark" aria-current="page" href="/index.html">
+                            <a class="nav-link" aria-current="page" href="/index.html">
                                 <img src="/public/images/logo.png" alt="Logo">
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block d-xl-none">
-                            <a class="nav-link text-dark" aria-current="page" href="/index.html">HOME</a>
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="productos.html" id="dropdown05"
-                                data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                                aria-expanded="false">Productos</a>
 
                             <ul class="dropdown-menu shadow-lg text-center bg-warning" aria-labelledby="dropdown05">
                                 <li>
                                     <a class="dropdown-item px-3" href="productos.html#offersAndReleases">Últimos
                                         Lanzamientos y Ofertas</a>
                                 </li>
-                                <li><a class="dropdown-item px-3" href="/index.html#categories">Categorías</a></li>
+                                <li><a class="dropdown-item px-3" href="/index.html#category">Categorías</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="contactenos.html">Contáctenos</a>
+                            <a class="nav-link" href="contactenos.html">Contáctenos</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link text-dark d-inline p-5" href="./views/perfil.html">
-                                <img src="public/images/icons/user.svg" class="icon" alt="User Icon" />
-                            </a>
-                            <a class="nav-link text-dark d-inline p-5" href="./views/carrito.html">
-                                <img src="public/images/icons/cart.svg" class="icon" alt="Cart Icon" />
-                            </a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--Social Media Accounts-->
-    <div class="social-media">
-        <a href="https://www.facebook.com/Just-Call-Fast-106379838279721" target="_blank">
-            <img src="/public/images/icons/facebook.svg" alt="Facebook Icon" />
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=542235182817" target="_blank">
-            <img src="/public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
-        </a>
-
-        <a href="https://instagram.com/justcallfast?igshid=144hfg73922sy" target="_blank">
-            <img src="/public/images/icons/instagram-icon.svg" alt="Instagram Icon" />
-        </a>
-
-    </div>
-
     <!--Page´s Footer-->
-    <footer class="footer">
-        Copyright © 2021 | Just Call Fast. All rights reserved.
+    <footer class="d-flex justify-content-evenly align-items-center bg-warning">
+        <div class="col-6 justify-content-center d-flex">
+            <span class="footer-text">Copyright © 2021 | Just Call Fast. All rights reserved.</span>
+        </div>
+
+        <ul class="nav col-6 justify-content-center list-unstyled d-flex">
+            <li class="ms-5">
+                <a href="https://www.facebook.com/Just-Call-Fast-106379838279721">
+                    <img class="sn-icon rounded-circle" src="/public/images/icons/facebook.svg" alt="Facebook Icon" />
+                </a>
+            </li>
+            <li class="ms-5">
+                <a href="https://api.whatsapp.com/send?phone=542235182817">
+                    <img class="sn-icon" src="/public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
+                </a>
+            </li>
+            <li class="ms-5">
+                <a href="https://instagram.com/justcallfast?igshid=144hfg73922sy">
+                    <img class="sn-icon rounded-circle" src="/public/images/icons/instagram-icon.svg"
+                        alt="Instagram Icon" />
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 

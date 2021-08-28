@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="/public/stylesheets/styles.css">
 </head>
 
-<body>
+<body class="vh-100">
     <!--Page´s Header Navigation Bar-->
     <header>
-        <nav class="navbar  navbar-expand-lg navbar-dark bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
-                <a class="navbar-brand text-dark d-lg-none" href="#">Just Call Fast</a>
+                <a class="navbar-brand text-black d-lg-none" href="/index.html">Just Call Fast</a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false">
                     <span class="navbar-toggler-icon"></span>
@@ -34,44 +34,36 @@
                 <div class="navbar-collapse collapse" id="navbarsExample05">
                     <ul class="navbar-nav text-center align-items-center mb-2 mb-lg-0">
                         <li class="nav-item d-none d-xl-block">
-                            <a class="nav-link text-dark" aria-current="page" href="/index.html">
+                            <a class="nav-link" aria-current="page" href="/index.html">
                                 <img src="/public/images/logo.png" alt="Logo">
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block d-xl-none">
-                            <a class="nav-link text-dark" aria-current="page" href="/index.html">HOME</a>
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle" href="productos.html" id="dropdown05"
-                                data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                                aria-expanded="false">Productos</a>
 
                             <ul class="dropdown-menu shadow-lg text-center bg-warning" aria-labelledby="dropdown05">
-                                <li><a class="dropdown-item px-3" href="#accesoriosTV">ACCESORIOS PARA TV</a></li>
-                                <li><a class="dropdown-item px-3" href="#almacenamiento">ALMACENAMIENTO</a></li>
-                                <li><a class="dropdown-item px-3" href="#audio">AUDIO</a></li>
-                                <li><a class="dropdown-item px-3" href="#cargadores">CARGADORES</a></li>
-                                <li><a class="dropdown-item px-3" href="#gadgets">GADGETS</a></li>
-                                <li><a class="dropdown-item px-3" href="#hogar">HOGAR Y ELECTRODOMÉSTICOS</a></li>
-                                <li><a class="dropdown-item px-3" href="#informatica">INFORMÁTICA Y GAMING</a></li>
-                                <li><a class="dropdown-item px-3" href="#iluminacion">ILUMINACIÓN</a></li>
-                                <li><a class="dropdown-item px-3" href="#pilas">PILAS</a></li>
-                                <li><a class="dropdown-item px-3" href="#soportes">SOPORTES PARA AUTO</a></li>
+                                <li><a class="dropdown-item px-3" href="#accesoriosTV">Accesorios para tv</a></li>
+                                <li><a class="dropdown-item px-3" href="#almacenamiento">Almacenamiento</a></li>
+                                <li><a class="dropdown-item px-3" href="#audio">Audio</a></li>
+                                <li><a class="dropdown-item px-3" href="#cargadores">Cargadores</a></li>
+                                <li><a class="dropdown-item px-3" href="#gadgets">Gadgets</a></li>
+                                <li><a class="dropdown-item px-3" href="#hogar">Hogar y Electrodomésticos</a></li>
+                                <li><a class="dropdown-item px-3" href="#informatica">Informática y Gaming</a></li>
+                                <li><a class="dropdown-item px-3" href="#iluminacion">Iluminación</a></li>
+                                <li><a class="dropdown-item px-3" href="#pilas">Pilas</a></li>
+                                <li><a class="dropdown-item px-3" href="#soportes">Soportes Para Auto</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="contactenos.html">Contáctenos</a>
+                            <a class="nav-link" href="contactenos.html">Contáctenos</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link text-dark d-inline p-5" href="./views/perfil.html">
-                                <img src="public/images/icons/user.svg" class="icon" alt="User Icon" />
-                            </a>
-                            <a class="nav-link text-dark d-inline p-5" href="./views/carrito.html">
-                                <img src="public/images/icons/cart.svg" class="icon" alt="Cart Icon" />
-                            </a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -185,41 +177,43 @@
             <h2 id="almacenamiento">
                 <span>ALMACENAMIENTO</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/usb.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/usb.png" alt="Producto">
                         </a>
                     </div>
 
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Pendrive 32GB Verbatim</p>
-
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Pendrive 32GB Verbatim</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
             </div>
 
             <h2 id="audio">
                 <span>AUDIO</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/inpods.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/inpods.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Auriculares Inpods I12</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Auriculares Inpods I12</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
@@ -238,399 +232,394 @@
             <h2 id="gadgets">
                 <span>GADGETS</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/soporte_celular.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/soporte_celular.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Trípode Flexible</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Trípode Flexible</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/camara_web.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/camara_web.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Cámara Web HD</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Cámara Web HD</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/reloj.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/reloj.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Reloj Smartband M3</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Reloj Smartband M3</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/auxiliar.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/auxiliar.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Cable Auxiliar</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Cable Auxiliar</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/hdmi.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/hdmi.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Cable HDMI</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Cable HDMI</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
             </div>
 
             <h2 id="hogar">
                 <span>HOGAR Y ELECTRODOMÉSTICOS</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/pico_cebador.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/pico_cebador.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Pico Cebador</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Pico Cebador</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/balanza_digital.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/balanza_digital.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Balanza Pocket</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Balanza Pocket</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/balanza_digital2.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/balanza_digital2.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Balanza de Cocina</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Balanza de Cocina</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/termos.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/termos.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Pava Eléctrica</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Pava Eléctrica</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
             </div>
+
 
             <h2 id="informatica">
                 <span>INFORMÁTICA Y GAMING</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/mouse.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/mouse.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Mouse Inalámbrico</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Mouse Inalámbrico</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/teclado.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/teclado.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Teclado USB</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Teclado USB</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/mouse_gamer.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/mouse_gamer.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Mouse Gamer NOGA</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Mouse Gamer NOGA</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/teclado_gamer.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/teclado_gamer.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Teclado Retroiluminado NOGA</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Teclado Retroiluminado NOGA</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/pad.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/pad.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Mousepad Gamer RGB NOGA</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Mousepad Gamer RGB NOGA</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-
             </div>
 
             <h2 id="iluminacion">
                 <span>ILUMINACIÓN</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/led.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/led.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Aro 26´ Luz LED</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Aro 26´ Luz LED</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/tira_led.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/tira_led.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Tira Luz RGB</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Tira Luz RGB</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
             </div>
 
             <h2 id="pilas">
                 <span>PILAS</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/pilas_aa.jpeg" alt="Producto Destacado 1" />
+                            <img src="/public/images/pilas_aa.jpeg" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Pilas AA Fulltotal X4</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Pilas AA Fulltotal X4</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/pilas_aaa.jpeg" alt="Producto Destacado 1" />
+                            <img src="/public/images/pilas_aaa.jpeg" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Pilas AAA Fulltotal X4</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Pilas AAA Fulltotal X4</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/cargadorpilas.jpeg" alt="Producto Destacado 1" />
+                            <img src="/public/images/cargadorpilas.jpeg" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Cargador de Pilas NOGA</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Cargador de Pilas NOGA</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
             </div>
 
             <h2 id="soportes">
                 <span>SOPORTES PARA AUTO</span>
             </h2>
-            <div class="products-section__list">
-                <div class="product-card">
-                    <div class="product-card--img">
+            <div
+                class="card-deck d-flex flex-wrap justify-content-evenly align-items-center align-content-evenly gap-5 mb-5 mt-5">
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/soporte_auto.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/soporte_auto.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Holder Netmark Magnético</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Holder Netmark Magnético</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
-                <div class="product-card">
-                    <div class="product-card--img">
+
+                <div class="card">
+                    <div class="card__img">
                         <a href="producto.html">
-                            <img src="/public/images/soporte_auto2.png" alt="Producto Destacado 1" />
+                            <img src="/public/images/soporte_auto2.png" alt="Producto">
                         </a>
                     </div>
-                    <div class="product-card--description">
-                        <h4>$223</h4>
-                        <p>Holder Sopapa</p>
 
-                        <button class="product-card--description__button">
+                    <div class="card__body">
+                        <h3 class="card__body__title">Holder Sopapa</h3>
+                        <h4 class="card__body__subtitle">$223</h4>
+                        <button class="card__body__button">
                             Agregar al Carrito
                         </button>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
 
-    <!--Social Media Accounts-->
-    <div class="social-media">
-        <a href="https://www.facebook.com/Just-Call-Fast-106379838279721" target="_blank">
-            <img src="/public/images/icons/facebook.svg" alt="Facebook Icon" />
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=542235182817" target="_blank">
-            <img src="/public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
-        </a>
-
-        <a href="https://instagram.com/justcallfast?igshid=144hfg73922sy" target="_blank">
-            <img src="/public/images/icons/instagram-icon.svg" alt="Instagram Icon" />
-        </a>
-    </div>
-
     <!--Page´s Footer-->
-    <footer class="footer">
-        Copyright © 2021 | Just Call Fast. All rights reserved.
+    <footer class="d-flex justify-content-evenly align-items-center bg-warning">
+        <div class="col-6 justify-content-center d-flex">
+            <span class="footer-text">Copyright © 2021 | Just Call Fast. All rights reserved.</span>
+        </div>
+
+        <ul class="nav col-6 justify-content-center list-unstyled d-flex">
+            <li class="ms-5">
+                <a href="https://www.facebook.com/Just-Call-Fast-106379838279721">
+                    <img class="sn-icon rounded-circle" src="/public/images/icons/facebook.svg" alt="Facebook Icon" />
+                </a>
+            </li>
+            <li class="ms-5">
+                <a href="https://api.whatsapp.com/send?phone=542235182817">
+                    <img class="sn-icon" src="/public/images/icons/whatsapp.svg" alt="WhatsApp Icon" />
+                </a>
+            </li>
+            <li class="ms-5">
+                <a href="https://instagram.com/justcallfast?igshid=144hfg73922sy">
+                    <img class="sn-icon rounded-circle" src="/public/images/icons/instagram-icon.svg"
+                        alt="Instagram Icon" />
+                </a>
+            </li>
+        </ul>
     </footer>
 
 </body>
