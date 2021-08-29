@@ -1,0 +1,48 @@
+footer {
+    padding: 10px;
+    font-family: $title-font;
+    box-shadow: $black-shadow-9;
+}
+
+.sn-icon {
+    width: 3rem;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+/* LANDSCAPE PHONES */
+@media (min-width: 576px) {
+    .sn-icon {
+        width: 4rem;
+    }
+
+    .footer-text {
+        font-size: 2rem;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+    .sn-icon {
+        width: 5rem;
+    }
+
+    .footer-text {
+        font-size: 3rem;
+        margin: 0 15px 0 15px;
+    }
+}
+
+/* DESKTOPS */
+@media (min-width: 992px) {
+    .sn-icon {
+        width: 6rem;
+        margin: 0 30px 0 30px;
+    }
+
+    .footer-text {
+        font-size: 4rem;
+    }
+}

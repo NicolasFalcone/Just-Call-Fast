@@ -1,0 +1,151 @@
+.card {
+    width: auto;
+    box-shadow: $black-shadow-2;
+    margin: 12px;
+
+    &__img {
+        height: 250px;
+        width: 250px;
+        overflow: hidden;
+
+        /*Product´s background*/
+        background: $transparent-background;
+        box-shadow: $black-inset-shadow-transparent;
+        backdrop-filter: blur(1px);
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__body {
+        width: auto;
+        height: auto;
+        background-color: $blanco;
+
+        &__title {
+            font-family: $text-font;
+            font-size: 2.5rem;
+            padding: 10px 0 0 20px;
+        }
+
+        &__subtitle {
+            font-family: $text-font;
+            font-size: 1.75rem;
+            font-weight: lighter;
+            text-align: right;
+            padding: 10px 20px 10px 0px;
+        }
+
+        &__button {
+            font-family: $text-font;
+            font-size: 1.75rem;
+            align-self: flex-end;
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
+
+/* LANDSCAPE PHONES */
+@media (min-width: 576px) {
+    .card__body {
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__subtitle {
+            font-size: 2rem;
+        }
+
+        &__button {
+            font-size: 2rem;
+
+        }
+    }
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+    .card {
+        &__img {
+            height: 300px;
+            width: 300px;
+        }
+
+        &__body {
+            &__title {
+                font-size: 4rem;
+            }
+
+            &__subtitle {
+                font-size: 3rem;
+            }
+
+            &__button {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+/* DESKTOPS */
+@media (min-width: 992px) {
+    .card {
+        transition-duration: 1s;
+        position: relative;
+        border-radius: 40px;
+
+        &__img {
+            transition-duration: 1s;
+            position: relative;
+            border-radius: 40px;
+            width: 350px;
+            height: 350px;
+        }
+
+        &__body {
+            height: 0;
+            position: relative;
+            transform: translateY(-145px);
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            transition-duration: 1s;
+            opacity: 0;
+
+            &__button {
+                border-bottom-left-radius: 40px;
+                border-bottom-right-radius: 40px;
+                transition-duration: 1s;
+
+                &:hover {
+                    background-color: #000;
+                    color: $blanco;
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px #000000;
+            border-radius: 0;
+        }
+    }
+
+    .card:hover .card__img {
+        border-radius: 0;
+    }
+
+    .card:hover .card__body {
+        transform: translateY(0);
+        height: 154px;
+        opacity: 1;
+    }
+
+    .card:hover .card__body__button {
+        border-radius: 0;
+    }
+}

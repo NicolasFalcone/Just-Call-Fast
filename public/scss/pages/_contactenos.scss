@@ -1,0 +1,65 @@
+.contact-form-style {
+    box-shadow: $black-inset-shadow-10;
+    background-color: #0000003f;
+    font-family: $text-font;
+    font-size: 30px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.535), rgba(0, 0, 0, 0.686)), url("/public/images/fondo_contacto.png");
+    background-size: cover;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+
+    & fieldset {
+        border: none;
+    }
+
+    & textarea {
+        font-family: $text-font;
+        font-size: 20px;
+        width: 30%;
+        height: 200px;
+        padding: 20px;
+        margin: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: $black-inset-shadow-4;
+        resize: none;
+    }
+
+    & input[type=submit] {
+        width: 20%;
+        background-color: $amarillo;
+        color: black;
+        font-family: $title-font;
+        font-size: 27px;
+        padding: 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 0 10px black;
+        transition-duration: 1s;
+
+        &:hover {
+            background-color: black;
+            color: $blanco;
+            box-shadow: 0 0 10px $amarillo;
+        }
+    }
+}
+
+
+.contact-form-style input[type=text],
+input[type=email],
+select {
+    font-family: $text-font;
+    font-size: 20px;
+    width: 30%;
+    padding: 20px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: $black-inset-shadow-4;
+}

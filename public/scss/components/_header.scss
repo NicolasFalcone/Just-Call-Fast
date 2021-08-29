@@ -1,0 +1,45 @@
+header {
+    box-shadow: $black-shadow-9;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar-brand {
+    font-family: $title-font;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-item {
+    padding: 10px 40px;
+
+    a {
+        font-family: $title-font;
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+        color: #000;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    & :hover {
+        background-color: #000;
+        color: $blanco;
+    }
+}
+
+/* DESKTOPS */
+@media (min-width: 992px) {
+    header {
+        position: static;
+    }
+}
