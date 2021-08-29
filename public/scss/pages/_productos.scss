@@ -21,17 +21,16 @@
     transition-duration: 1s;
 
     &:hover {
-        box-shadow: 0 0 20px $blanco;
+        box-shadow: 0 0 10px $blanco;
     }
 
     &__img {
+        @extend .transparent;
+
         grid-area: horizontal-container__img;
         width: 350px;
         height: 300px;
 
-        background: $transparent-background;
-        box-shadow: $black-inset-shadow-transparent;
-        ;
         backdrop-filter: blur(8px);
 
         & img {
@@ -69,12 +68,12 @@
         }
 
         & a {
+            @extend .border-radius-50;
             background-color: $amarillo;
             font-family: $text-font;
             font-size: 3rem;
             padding: 1px 30px;
             box-shadow: 0 0 9px #000;
-            border-radius: 50px;
             transition-duration: 1s;
             color: #000;
         }
@@ -111,7 +110,7 @@
         align-items: center;
         align-content: space-evenly;
         padding-top: 40px;
-        border-radius: 30px;
+        @extend .border-radius-30;
     }
 }
 
@@ -141,7 +140,7 @@
         align-items: center;
         align-content: space-evenly;
         padding-top: 40px;
-        border-radius: 30px;
+        @extend .border-radius-30;
     }
 }
 

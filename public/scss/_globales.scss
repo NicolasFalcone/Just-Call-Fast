@@ -35,3 +35,21 @@ body {
     padding: 10px;
     filter: drop-shadow(0 0 15px rgba(255, 166, 0, 0.808));
 }
+
+.transparent {
+    background: $transparent-background;
+    box-shadow: $black-inset-shadow-transparent;
+    backdrop-filter: blur(1px);
+}
+
+@for $i from 0 through 50 {
+    .border-radius-#{$i} {
+        @if $i==0 {
+            border-radius: 0;
+        }
+
+        @else if $i % 10==0 {
+            border-radius: #{$i}px;
+        }
+    }
+}

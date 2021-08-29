@@ -4,14 +4,13 @@
     margin: 12px;
 
     &__img {
+        @extend .transparent;
+
         height: 250px;
         width: 250px;
         overflow: hidden;
 
         /*Product´s background*/
-        background: $transparent-background;
-        box-shadow: $black-inset-shadow-transparent;
-        backdrop-filter: blur(1px);
 
         & img {
             width: 100%;

@@ -38,6 +38,38 @@ body {
           filter: drop-shadow(0 0 15px rgba(255, 166, 0, 0.808));
 }
 
+.transparent, .horizontal-container__img, .product__img, .card__img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+
+.border-radius-0 {
+  border-radius: 0;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+.border-radius-20 {
+  border-radius: 20px;
+}
+
+.border-radius-30, .categories__img img, .new-releases-section__list, .offers-section__list, .product__img, .product__description {
+  border-radius: 30px;
+}
+
+.border-radius-40, .product__description--button {
+  border-radius: 40px;
+}
+
+.border-radius-50, .horizontal-container__description a {
+  border-radius: 50px;
+}
+
 .hero {
   -webkit-box-shadow: inset 0 0 10px #000000;
           box-shadow: inset 0 0 10px #000000;
@@ -59,36 +91,6 @@ body {
 
 .display-3 {
   font-family: "Bebas Neue", cursive;
-}
-
-.featured-products-section h3 {
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.featured-products-section h3 span {
-  font-family: "Oswald", sans-serif;
-  font-size: 5rem;
-  padding: 15px;
-  letter-spacing: 0.5rem;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-          box-shadow: inset 0 0 10px #000000;
-  border-radius: 10px;
-}
-
-.featured-products-section__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  position: relative;
 }
 
 .categories {
@@ -115,7 +117,6 @@ body {
 
 .categories__img img {
   width: 100%;
-  border-radius: 30px;
   -webkit-box-shadow: 0 0 10px #eeeeee;
           box-shadow: 0 0 10px #eeeeee;
 }
@@ -124,10 +125,6 @@ body {
   gap: 35px;
 }
 
-/*
-.categories .d-flex {
-    gap: 35px;
-}*/
 /* LANDSCAPE PHONES */
 @media (min-width: 576px) {
   .categories__title {
@@ -211,8 +208,8 @@ body {
 }
 
 .horizontal-container:hover {
-  -webkit-box-shadow: 0 0 20px #eeeeee;
-          box-shadow: 0 0 20px #eeeeee;
+  -webkit-box-shadow: 0 0 10px #eeeeee;
+          box-shadow: 0 0 10px #eeeeee;
 }
 
 .horizontal-container__img {
@@ -221,9 +218,6 @@ body {
   grid-area: horizontal-container__img;
   width: 350px;
   height: 300px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
@@ -274,7 +268,6 @@ body {
   padding: 1px 30px;
   -webkit-box-shadow: 0 0 9px #000;
           box-shadow: 0 0 9px #000;
-  border-radius: 50px;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   color: #000;
@@ -322,7 +315,6 @@ body {
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
   padding-top: 40px;
-  border-radius: 30px;
 }
 
 .offers-section {
@@ -363,7 +355,6 @@ body {
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
   padding-top: 40px;
-  border-radius: 30px;
 }
 
 .products-section {
@@ -430,12 +421,8 @@ body {
   width: 450px;
   height: 450px;
   margin-right: 30px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
-  border-radius: 30px;
 }
 
 .product__img img {
@@ -452,7 +439,6 @@ body {
   background-color: #eeeeee;
   -webkit-box-shadow: 0 0 8px #000;
           box-shadow: 0 0 8px #000;
-  border-radius: 30px;
   text-align: center;
 }
 
@@ -491,7 +477,6 @@ body {
   font-size: 4rem;
   padding: 8px;
   margin: 0 0 30px 40px;
-  border-radius: 40px;
   -webkit-box-shadow: 0 0 10px #000;
           box-shadow: 0 0 10px #000;
   border: none;
@@ -637,11 +622,6 @@ header {
   width: 250px;
   overflow: hidden;
   /*Product´s background*/
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
 }
 
 .card__img img {
