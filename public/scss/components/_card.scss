@@ -1,5 +1,6 @@
 .card {
-    width: auto;
+    width: min-content;
+    height: min-content;
     box-shadow: $black-shadow-2;
     margin: 12px;
 
@@ -10,8 +11,6 @@
         width: 250px;
         overflow: hidden;
 
-        /*Product´s background*/
-
         & img {
             width: 100%;
             height: 100%;
@@ -19,26 +18,21 @@
     }
 
     &__body {
-        width: auto;
-        height: auto;
         background-color: $blanco;
+        font-family: $text-font;
 
         &__title {
-            font-family: $text-font;
             font-size: 2.5rem;
-            padding: 10px 0 0 20px;
+            padding: 10px 0 0 10px;
         }
 
         &__subtitle {
-            font-family: $text-font;
             font-size: 1.75rem;
-            font-weight: lighter;
             text-align: right;
-            padding: 10px 20px 10px 0px;
+            padding: 10px 10px 10px 0px;
         }
 
         &__button {
-            font-family: $text-font;
             font-size: 1.75rem;
             align-self: flex-end;
             background-color: #ffc107;
@@ -49,6 +43,49 @@
         }
     }
 }
+
+.horizontal-card {
+    @extend .card;
+
+    &__img {
+        @extend .card__img;
+    }
+
+    &__body {
+        @extend .card__body;
+        text-align: center;
+        padding: 0 10px 20px 10px;
+
+        &__title {
+            font-size: 2.5rem;
+            padding-top: 15px;
+        }
+
+        &__list {
+            font-size: 1.75rem;
+            margin: 10px 0 20px 0;
+            text-align: start;
+            list-style-type: none;
+            padding: 0;
+
+            & li {
+                padding: 4px 0;
+            }
+        }
+
+        &__link {
+            @extend .border-radius-50;
+            background-color: $amarillo;
+            font-size: 1.75rem;
+            padding: 3px 15px;
+            box-shadow: 0 0 9px #000;
+            transition-duration: 1s;
+            color: #000;
+        }
+    }
+}
+
+
 
 /* LANDSCAPE PHONES */
 @media (min-width: 576px) {
@@ -66,6 +103,20 @@
 
         }
     }
+
+    .horizontal-card__body {
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__list {
+            font-size: 2rem;
+        }
+
+        &__link {
+            font-size: 2rem;
+        }
+    }
 }
 
 /* TABLETS */
@@ -78,7 +129,7 @@
 
         &__body {
             &__title {
-                font-size: 4rem;
+                font-size: 3.5rem;
             }
 
             &__subtitle {
@@ -88,6 +139,20 @@
             &__button {
                 font-size: 3rem;
             }
+        }
+    }
+
+    .horizontal-card__body {
+        &__title {
+            font-size: 3.5rem;
+        }
+
+        &__list {
+            font-size: 2.5rem;
+        }
+
+        &__link {
+            font-size: 3rem;
         }
     }
 }
@@ -145,6 +210,43 @@
     }
 
     .card:hover .card__body__button {
+        border-radius: 0;
+    }
+
+    .horizontal-card {
+        height: min-content;
+        overflow: hidden;
+
+        &__img {
+            border-radius: 0;
+        }
+
+        &__body {
+            height: auto;
+            opacity: 1;
+            transform: translateY(0);
+
+            &__link {
+                &:hover {
+                    background-color: #000;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+
+    .horizontal-card:hover .horizontal-card__img {
+        border-radius: 0;
+    }
+
+    .horizontal-card:hover .horizontal-card__body {
+        transform: none;
+        height: auto;
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    .horizontal-card:hover .horizontal-card__body__button {
         border-radius: 0;
     }
 }

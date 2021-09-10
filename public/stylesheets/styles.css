@@ -1,4 +1,3 @@
-@charset "UTF-8";
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -27,7 +26,6 @@ a {
 }
 
 body {
-  background-image: url("/public/images/patterns/pattern.png");
   min-width: 300px;
 }
 
@@ -38,7 +36,14 @@ body {
           filter: drop-shadow(0 0 15px rgba(255, 166, 0, 0.808));
 }
 
-.transparent, .horizontal-container__img, .product__img, .card__img {
+.display-3 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.transparent, .product__img, .card__img, .horizontal-card__img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(145.54deg, rgba(255, 255, 255, 0.4) 9.57%, rgba(255, 255, 255, 0) 70.35%), rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
@@ -58,7 +63,7 @@ body {
   border-radius: 20px;
 }
 
-.border-radius-30, .categories__img img, .new-releases-section__list, .offers-section__list, .product__img, .product__description {
+.border-radius-30, .categories__img img, .product__img, .product__description {
   border-radius: 30px;
 }
 
@@ -66,7 +71,7 @@ body {
   border-radius: 40px;
 }
 
-.border-radius-50, .horizontal-container__description a {
+.border-radius-50, .horizontal-card__body__link {
   border-radius: 50px;
 }
 
@@ -89,19 +94,15 @@ body {
   width: 100%;
 }
 
-.display-3 {
-  font-family: "Bebas Neue", cursive;
-}
-
 .categories {
   background-image: url("/public/images/patterns/d-pattern.png");
   padding: 40px 0 40px 0;
   margin-top: 50px;
-  color: #eeeeee;
+  color: #f7f7f7;
 }
 
 .categories__title {
-  color: #eeeeee;
+  color: #f7f7f7;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.3rem;
   font-size: 2rem;
@@ -117,8 +118,8 @@ body {
 
 .categories__img img {
   width: 100%;
-  -webkit-box-shadow: 0 0 10px #eeeeee;
-          box-shadow: 0 0 10px #eeeeee;
+  -webkit-box-shadow: 0 0 10px #f7f7f7;
+          box-shadow: 0 0 10px #f7f7f7;
 }
 
 .categories .d-flex {
@@ -182,120 +183,19 @@ body {
 .p-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: "new-releases-section offers-section" "products-section products-section";
-}
-
-/* HORIZONTAL PRODUCT´S CARD */
-.horizontal-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "horizontal-container__img horizontal-container__description";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  width: 700px;
-  height: 300px;
-  margin: 0 15px 50px 15px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.horizontal-container:hover {
-  -webkit-box-shadow: 0 0 10px #eeeeee;
-          box-shadow: 0 0 10px #eeeeee;
-}
-
-.horizontal-container__img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: horizontal-container__img;
-  width: 350px;
-  height: 300px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-}
-
-.horizontal-container__img img {
-  width: 100%;
-  height: 100%;
-}
-
-.horizontal-container__description {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: horizontal-container__description;
-  -ms-grid-column-align: stretch;
-      justify-self: stretch;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  text-align: center;
-  padding: 0 1px;
-}
-
-.horizontal-container__description h4 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 5rem;
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-  color: #ffc107;
-  padding-top: 15px;
-}
-
-.horizontal-container__description ul {
-  list-style-type: none;
-  font-family: "Oswald", sans-serif;
-  font-size: 2.5rem;
-  color: #eeeeee;
-  margin-bottom: 16px;
-}
-
-.horizontal-container__description li {
-  padding: 4px 0;
-}
-
-.horizontal-container__description a {
-  background-color: #ffc107;
-  font-family: "Oswald", sans-serif;
-  font-size: 3rem;
-  padding: 1px 30px;
-  -webkit-box-shadow: 0 0 9px #000;
-          box-shadow: 0 0 9px #000;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  color: #000;
-}
-
-.horizontal-container__description a:hover {
-  background-color: #eeeeee;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 0;
+      grid-template-areas: "new-releases-section" "offers-section" "products-section";
+  background-color: #f7f7f7;
 }
 
 .new-releases-section {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: new-releases-section;
-  padding-top: 20px;
-  background-image: url("/public/images/patterns/d-pattern.png");
-}
-
-.new-releases-section__title {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.new-releases-section__title span {
-  font-family: "Oswald", sans-serif;
-  font-size: 4rem;
-  padding: 5px;
-  letter-spacing: 1rem;
-  color: #eeeeee;
 }
 
 .new-releases-section__list {
@@ -307,33 +207,20 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
-  padding-top: 40px;
+  margin-bottom: 20px;
 }
 
 .offers-section {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: offers-section;
-  padding-top: 20px;
-  background-image: url("/public/images/patterns/d-pattern.png");
-}
-
-.offers-section__title {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.offers-section__title span {
-  font-family: "Oswald", sans-serif;
-  font-size: 4rem;
-  padding: 5px;
-  letter-spacing: 1rem;
-  color: #eeeeee;
+  padding-bottom: 30px;
+  background-color: #ebebeb;
 }
 
 .offers-section__list {
@@ -345,33 +232,24 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
-  padding-top: 40px;
 }
 
 .products-section {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: products-section;
 }
 
 .products-section h2 {
-  -webkit-box-shadow: 0 0 9px #000000;
-          box-shadow: 0 0 9px #000000;
-  background-color: #ffc107;
-  padding: 2rem 0;
   text-align: center;
-}
-
-.products-section h2 span {
-  font-family: "Oswald", sans-serif;
-  font-size: 4rem;
-  letter-spacing: 0.5rem;
+  padding-top: 24px;
+  margin: 0;
+  border-top: 20px solid #ffc107;
 }
 
 .products-section__list {
@@ -389,10 +267,42 @@ body {
   padding: 30px 0;
 }
 
-.products-section h3 span {
-  font-family: "Oswald", sans-serif;
-  font-size: 3rem;
-  letter-spacing: 0.5rem;
+/* DESKTOPS */
+@media (min-width: 992px) {
+  .p-main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "new-releases-section offers-section" "products-section products-section";
+  }
+  .new-releases-section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: new-releases-section;
+    background-color: #ebebeb;
+  }
+  .new-releases-section__list {
+    gap: 20px;
+  }
+  .offers-section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: offers-section;
+  }
+  .offers-section__list {
+    gap: 20px;
+  }
+  .products-section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: products-section;
+  }
+  .products-section h2 {
+    text-align: start;
+    padding-left: 10rem;
+  }
 }
 
 .product {
@@ -432,7 +342,7 @@ body {
   grid-area: product__description;
   width: 60%;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
   -webkit-box-shadow: 0 0 8px #000;
           box-shadow: 0 0 8px #000;
   text-align: center;
@@ -481,7 +391,7 @@ body {
 }
 
 .product__description--button:hover {
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
 }
 
 .contact-form-style {
@@ -562,7 +472,7 @@ select {
   }
   .contact-form-style input[type=submit]:hover {
     background-color: black;
-    color: #eeeeee;
+    color: #f7f7f7;
     -webkit-box-shadow: 0 0 10px #ffc107;
             box-shadow: 0 0 10px #ffc107;
   }
@@ -575,12 +485,15 @@ select {
 }
 
 header {
-  -webkit-box-shadow: 0 0 9px #000000;
-          box-shadow: 0 0 9px #000000;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 9999;
+}
+
+.navbar {
+  -webkit-box-shadow: 0 0 9px #000000;
+          box-shadow: 0 0 9px #000000;
 }
 
 .navbar-brand {
@@ -612,7 +525,7 @@ header {
 
 .nav-item :hover {
   background-color: #000;
-  color: #eeeeee;
+  color: #f7f7f7;
 }
 
 /* LANDSCAPE PHONES */
@@ -639,47 +552,46 @@ header {
   }
 }
 
-.card {
-  width: auto;
+.card, .horizontal-card {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   -webkit-box-shadow: 0 0 2px #000000;
           box-shadow: 0 0 2px #000000;
   margin: 12px;
 }
 
-.card__img {
+.card__img, .horizontal-card__img {
   height: 250px;
   width: 250px;
   overflow: hidden;
-  /*Product´s background*/
 }
 
-.card__img img {
+.card__img img, .horizontal-card__img img {
   width: 100%;
   height: 100%;
 }
 
-.card__body {
-  width: auto;
-  height: auto;
-  background-color: #eeeeee;
+.card__body, .horizontal-card__body {
+  background-color: #f7f7f7;
+  font-family: "Oswald", sans-serif;
 }
 
 .card__body__title {
-  font-family: "Oswald", sans-serif;
   font-size: 2.5rem;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 10px;
 }
 
 .card__body__subtitle {
-  font-family: "Oswald", sans-serif;
   font-size: 1.75rem;
-  font-weight: lighter;
   text-align: right;
-  padding: 10px 20px 10px 0px;
+  padding: 10px 10px 10px 0px;
 }
 
 .card__body__button {
-  font-family: "Oswald", sans-serif;
   font-size: 1.75rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -688,6 +600,39 @@ header {
   border: none;
   width: 100%;
   padding: 10px;
+}
+
+.horizontal-card__body {
+  text-align: center;
+  padding: 0 10px 20px 10px;
+}
+
+.horizontal-card__body__title {
+  font-size: 2.5rem;
+  padding-top: 15px;
+}
+
+.horizontal-card__body__list {
+  font-size: 1.75rem;
+  margin: 10px 0 20px 0;
+  text-align: start;
+  list-style-type: none;
+  padding: 0;
+}
+
+.horizontal-card__body__list li {
+  padding: 4px 0;
+}
+
+.horizontal-card__body__link {
+  background-color: #ffc107;
+  font-size: 1.75rem;
+  padding: 3px 15px;
+  -webkit-box-shadow: 0 0 9px #000;
+          box-shadow: 0 0 9px #000;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  color: #000;
 }
 
 /* LANDSCAPE PHONES */
@@ -701,16 +646,25 @@ header {
   .card__body__button {
     font-size: 2rem;
   }
+  .horizontal-card__body__title {
+    font-size: 3rem;
+  }
+  .horizontal-card__body__list {
+    font-size: 2rem;
+  }
+  .horizontal-card__body__link {
+    font-size: 2rem;
+  }
 }
 
 /* TABLETS */
 @media (min-width: 768px) {
-  .card__img {
+  .card__img, .horizontal-card__img {
     height: 300px;
     width: 300px;
   }
   .card__body__title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .card__body__subtitle {
     font-size: 3rem;
@@ -718,17 +672,26 @@ header {
   .card__body__button {
     font-size: 3rem;
   }
+  .horizontal-card__body__title {
+    font-size: 3.5rem;
+  }
+  .horizontal-card__body__list {
+    font-size: 2.5rem;
+  }
+  .horizontal-card__body__link {
+    font-size: 3rem;
+  }
 }
 
 /* DESKTOPS */
 @media (min-width: 992px) {
-  .card {
+  .card, .horizontal-card {
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
     position: relative;
     border-radius: 40px;
   }
-  .card__img {
+  .card__img, .horizontal-card__img {
     -webkit-transition-duration: 1s;
             transition-duration: 1s;
     position: relative;
@@ -736,7 +699,7 @@ header {
     width: 350px;
     height: 350px;
   }
-  .card__body {
+  .card__body, .horizontal-card__body {
     height: 0;
     position: relative;
     -webkit-transform: translateY(-145px);
@@ -755,23 +718,55 @@ header {
   }
   .card__body__button:hover {
     background-color: #000;
-    color: #eeeeee;
+    color: #f7f7f7;
   }
-  .card:hover {
+  .card:hover, .horizontal-card:hover {
     -webkit-box-shadow: 0 0 10px #000000;
             box-shadow: 0 0 10px #000000;
     border-radius: 0;
   }
-  .card:hover .card__img {
+  .card:hover .card__img, .horizontal-card:hover .card__img, .card:hover .horizontal-card__img, .horizontal-card:hover .horizontal-card__img {
     border-radius: 0;
   }
-  .card:hover .card__body {
+  .card:hover .card__body, .horizontal-card:hover .card__body, .card:hover .horizontal-card__body, .horizontal-card:hover .horizontal-card__body {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     height: 154px;
     opacity: 1;
   }
-  .card:hover .card__body__button {
+  .card:hover .card__body__button, .horizontal-card:hover .card__body__button {
+    border-radius: 0;
+  }
+  .horizontal-card {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    overflow: hidden;
+  }
+  .horizontal-card__img {
+    border-radius: 0;
+  }
+  .horizontal-card__body {
+    height: auto;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .horizontal-card__body__link:hover {
+    background-color: #000;
+    color: #f7f7f7;
+  }
+  .horizontal-card:hover .horizontal-card__img {
+    border-radius: 0;
+  }
+  .horizontal-card:hover .horizontal-card__body {
+    -webkit-transform: none;
+            transform: none;
+    height: auto;
+    opacity: 1;
+    border-radius: 0;
+  }
+  .horizontal-card:hover .horizontal-card__body__button {
     border-radius: 0;
   }
 }

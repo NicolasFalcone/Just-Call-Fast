@@ -1,8 +1,11 @@
 header {
-    box-shadow: $black-shadow-9;
     position: sticky;
     top: 0;
     z-index: 9999;
+}
+
+.navbar {
+    box-shadow: $black-shadow-9;
 }
 
 .navbar-brand {
