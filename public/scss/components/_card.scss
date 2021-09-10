@@ -65,8 +65,7 @@
             font-size: 1.75rem;
             margin: 10px 0 20px 0;
             text-align: start;
-            list-style-type: none;
-            padding: 0;
+            padding: 0 15px;
 
             & li {
                 padding: 4px 0;
@@ -149,6 +148,7 @@
 
         &__list {
             font-size: 2.5rem;
+            padding: 0 30px;
         }
 
         &__link {
@@ -205,7 +205,7 @@
 
     .card:hover .card__body {
         transform: translateY(0);
-        height: 154px;
+        height: 149px;
         opacity: 1;
     }
 

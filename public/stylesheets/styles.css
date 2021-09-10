@@ -514,7 +514,7 @@ header {
 
 .nav-item a {
   font-family: "Bebas Neue", cursive;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   letter-spacing: 0.3rem;
   color: #000;
 }
@@ -616,8 +616,7 @@ header {
   font-size: 1.75rem;
   margin: 10px 0 20px 0;
   text-align: start;
-  list-style-type: none;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .horizontal-card__body__list li {
@@ -677,6 +676,7 @@ header {
   }
   .horizontal-card__body__list {
     font-size: 2.5rem;
+    padding: 0 30px;
   }
   .horizontal-card__body__link {
     font-size: 3rem;
@@ -731,7 +731,7 @@ header {
   .card:hover .card__body, .horizontal-card:hover .card__body, .card:hover .horizontal-card__body, .horizontal-card:hover .horizontal-card__body {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 154px;
+    height: 149px;
     opacity: 1;
   }
   .card:hover .card__body__button, .horizontal-card:hover .card__body__button {
