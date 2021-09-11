@@ -415,7 +415,7 @@ body {
 .contact-form-style textarea {
   font-family: "Oswald", sans-serif;
   font-size: 15px;
-  width: 300px;
+  width: 250px;
   height: 200px;
   padding: 20px;
   margin: 8px;
@@ -450,7 +450,7 @@ input[type=email],
 select {
   font-family: "Oswald", sans-serif;
   font-size: 15px;
-  width: 300px;
+  width: 250px;
   padding: 20px;
   margin: 8px;
   border: 1px solid #ccc;
@@ -514,7 +514,7 @@ header {
 
 .nav-item a {
   font-family: "Bebas Neue", cursive;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3rem;
   color: #000;
 }
@@ -524,8 +524,7 @@ header {
 }
 
 .nav-item :hover {
-  background-color: #000;
-  color: #f7f7f7;
+  color: #000;
 }
 
 /* LANDSCAPE PHONES */
@@ -549,6 +548,10 @@ header {
 @media (min-width: 992px) {
   header {
     position: static;
+  }
+  .nav-item :hover {
+    background-color: #000;
+    color: #f7f7f7;
   }
 }
 
