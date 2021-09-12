@@ -1,3 +1,19 @@
+.about-section-one {
+    padding-top: 5rem;
+
+    & h2 {
+        color: $blanco;
+    }
+
+    & p {
+        color: $blanco;
+    }
+}
+
+.about-section-two {
+    padding-top: 5rem;
+}
+
 .paragraph {
     font-family: $paragraph-font;
     font-size: 1.5rem;
@@ -43,12 +59,13 @@
     }
 }
 
-.about-imgs {
-    padding: 0 4rem;
+.about-img {
+    padding: 0 4rem 5rem 4rem;
 
     & img {
         width: 100%;
         height: 100%;
+        box-shadow: $black-shadow-9;
     }
 }
 
@@ -60,8 +77,8 @@
         padding: 0 10rem;
     }
 
-    .about-imgs {
-        padding: 0 10rem;
+    .about-img {
+        padding: 0 10rem 5rem 10rem;
     }
 }
 
@@ -89,15 +106,23 @@
         }
     }
 
-    .about-imgs {
-        padding: 0 16rem;
+    .about-img {
+        padding: 0 16rem 5rem 16rem;
     }
 }
 
 /* DESKTOPS */
 @media (min-width: 992px) {
+    .about-section-one {
+        padding: 12rem 0;
+
+        & .paragraph {
+            padding: 0 22rem;
+        }
+    }
+
     .paragraph {
-        padding: 0 22rem;
+        padding: 0 6rem;
     }
 
     .profile {
@@ -117,14 +142,31 @@
         }
     }
 
-    .about-imgs {
+    .about-section-two {
+
+        & .d-lg-flex {
+            padding: 10rem 0;
+        }
+    }
+
+    .about-img {
         padding: 0;
+
+        & img {
+            box-shadow: none;
+        }
     }
 }
 
 /* LARGE DESKTOPS */
 @media (min-width: 1200px) {
+    .about-section-one {
+        & .paragraph {
+            padding: 0 30rem;
+        }
+    }
+
     .paragraph {
-        padding: 0 33rem;
+        padding: 0 15rem;
     }
 }

@@ -394,6 +394,22 @@ body {
   background-color: #f7f7f7;
 }
 
+.about-section-one {
+  padding-top: 5rem;
+}
+
+.about-section-one h2 {
+  color: #f7f7f7;
+}
+
+.about-section-one p {
+  color: #f7f7f7;
+}
+
+.about-section-two {
+  padding-top: 5rem;
+}
+
 .paragraph {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
@@ -444,13 +460,15 @@ body {
   font-style: italic;
 }
 
-.about-imgs {
-  padding: 0 4rem;
+.about-img {
+  padding: 0 4rem 5rem 4rem;
 }
 
-.about-imgs img {
+.about-img img {
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: 0 0 9px #000000;
+          box-shadow: 0 0 9px #000000;
 }
 
 /* LANDSCAPE PHONES */
@@ -459,8 +477,8 @@ body {
     font-size: 2rem;
     padding: 0 10rem;
   }
-  .about-imgs {
-    padding: 0 10rem;
+  .about-img {
+    padding: 0 10rem 5rem 10rem;
   }
 }
 
@@ -480,15 +498,21 @@ body {
   .profile__body--description {
     font-size: 2rem;
   }
-  .about-imgs {
-    padding: 0 16rem;
+  .about-img {
+    padding: 0 16rem 5rem 16rem;
   }
 }
 
 /* DESKTOPS */
 @media (min-width: 992px) {
-  .paragraph {
+  .about-section-one {
+    padding: 12rem 0;
+  }
+  .about-section-one .paragraph {
     padding: 0 22rem;
+  }
+  .paragraph {
+    padding: 0 6rem;
   }
   .profile__img {
     height: 260px;
@@ -500,15 +524,25 @@ body {
   .profile__body--description {
     font-size: 2.5rem;
   }
-  .about-imgs {
+  .about-section-two .d-lg-flex {
+    padding: 10rem 0;
+  }
+  .about-img {
     padding: 0;
+  }
+  .about-img img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
 /* LARGE DESKTOPS */
 @media (min-width: 1200px) {
+  .about-section-one .paragraph {
+    padding: 0 30rem;
+  }
   .paragraph {
-    padding: 0 33rem;
+    padding: 0 15rem;
   }
 }
 
