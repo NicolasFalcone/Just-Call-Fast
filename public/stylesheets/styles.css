@@ -95,7 +95,6 @@ body {
 }
 
 .categories {
-  background-image: url("/public/images/patterns/d-pattern.png");
   padding: 40px 0 40px 0;
   margin-top: 50px;
   color: #f7f7f7;
@@ -198,6 +197,10 @@ body {
   grid-area: new-releases-section;
 }
 
+.new-releases-section h2 {
+  color: #f7f7f7;
+}
+
 .new-releases-section__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,7 +223,10 @@ body {
   -ms-grid-column: 1;
   grid-area: offers-section;
   padding-bottom: 30px;
-  background-color: #ebebeb;
+}
+
+.offers-section h2 {
+  color: #f7f7f7;
 }
 
 .offers-section__list {
@@ -280,7 +286,6 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: new-releases-section;
-    background-color: #ebebeb;
   }
   .new-releases-section__list {
     gap: 20px;
@@ -914,6 +919,10 @@ header {
   .horizontal-card__body__link:hover {
     background-color: #000;
     color: #f7f7f7;
+  }
+  .horizontal-card:hover {
+    -webkit-box-shadow: 0 0 9px #fff;
+            box-shadow: 0 0 9px #fff;
   }
   .horizontal-card:hover .horizontal-card__img {
     border-radius: 0;

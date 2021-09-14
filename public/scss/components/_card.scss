@@ -233,6 +233,10 @@
                 }
             }
         }
+
+        &:hover {
+            box-shadow: $white-shadow-9;
+        }
     }
 
     .horizontal-card:hover .horizontal-card__img {

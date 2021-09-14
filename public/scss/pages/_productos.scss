@@ -13,6 +13,10 @@
 .new-releases-section {
     grid-area: new-releases-section;
 
+    & h2 {
+        color: $blanco;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -26,7 +30,11 @@
 .offers-section {
     grid-area: offers-section;
     padding-bottom: 30px;
-    background-color: rgb(235, 235, 235);
+    //background-color: rgb(235, 235, 235);
+
+    & h2 {
+        color: $blanco;
+    }
 
     &__list {
         display: flex;
@@ -69,7 +77,7 @@
 
     .new-releases-section {
         grid-area: new-releases-section;
-        background-color: rgb(235, 235, 235);
+        //background-color: rgb(235, 235, 235);
 
         &__list {
             gap: 20px;
